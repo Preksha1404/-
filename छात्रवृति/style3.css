@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    font-family:cursive ;
+}
+
+.faq {
+    margin-bottom: 20px;
+    
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+  border-radius: 5px;
+}
+
+
+
+.answer {
+    display: none;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color:white;
+    border: 2px solid white;
+  border-radius: 5px;
+}
+
+.answer1 {
+    display: none;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color:white;
+    border: 2px solid white ;
+  border-radius: 5px;
+}
+
+.answer2 {
+    display: none;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color:white;
+    border: 2px solid white;
+  border-radius: 5px;
+}

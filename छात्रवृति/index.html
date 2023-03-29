@@ -1,0 +1,101 @@
+<!-- this page contains source code for the Home page -->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/Add a heading.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>छात्रवृति | Home</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/image (2).png" width="9%">
+        <a href="#" class="logo">छात्रवृति</a>
+        <nav class="nav-items">
+          <a href="index.html">Home</a>
+          <div class="dropdown"
+            <button class="dropbtn" style="color:white">Scholarship
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>Mega Menu</h2>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <h3> All Category </h3>
+                  <a href="allscholarship.html">ALL SCHOLARSHIPS</a>
+                </div>
+                <div class="column">
+                  <h3>Caste Category </h3>
+                  <a href="st.html" target="_blank">ST</a>
+                  <a href="sc.html" target="_blank">SC</a>
+                  <a href="obc.html" target="_blank">OBC</a>
+                </div>
+                <div class="column">
+                  <h3>Present Class</h3>
+                  <a href="class10.html">CLASS 10</a>
+                  <a href="class11.html">CLASS 11-12</a>
+                  <a href="college.html">COLLEGE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="queries.html">Queries</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </nav>
+      </header>
+      <main>
+        <div class="carousel">
+          <div class="carousel-slide">
+            <img src="./images/Screenshot 2023-03-26 224500.png" alt="image1" style="width:17%;" style="height:100%">
+          </div>
+          <div class="carousel-slide">
+            <img src="./images/Screenshot 2023-03-27 010355.png" alt="image2" style="width:17%;"style="height:10%">
+          </div>
+          <div class="carousel-slide">
+            <img src="./images/Screenshot 2023-03-27 010134.png" alt="image3" style="width:17%;"style="height:10%">
+          </div>
+        </div>
+        <script>
+          const carouselSlide = document.querySelector(".carousel");
+          const carouselImages = document.querySelectorAll(".carousel-slide");
+
+          let counter = 0;
+          const interval = setInterval(() => {
+            carouselImages[counter].classList.remove("active");
+            counter++;
+            if (counter === carouselImages.length) {
+              counter = 0;
+            }
+            carouselImages[counter].classList.add("active");
+          }, 2000);
+
+        </script>
+          <div class="intro">
+            <h1 style="color: brown;">प्रिय मित्रों!!</h1></p>
+            <p><h2>Welcome to our scholarship website! Our goal is to provide access to a wide range of scholarships to help students pursue their academic and career goals. We believe that everyone should have access to education and the opportunity to achieve their goals, regardless of their financial situation. Explore our scholarships and apply today!</h2></p>
+                </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="copy">&copy; 2023 छात्रवृति</div>
+        <div class="bottom-links">
+          <div class="links">
+            <a href="https://www.facebook.com/YourPageNameHere" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/YourPageNameHere" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/YourPageNameHere" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

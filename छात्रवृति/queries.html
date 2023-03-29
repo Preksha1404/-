@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body style="background-color: beige;">
+    <h1  style="color :rgb(91, 68, 241); background-color: lavender;">Frequently Asked Questions</h1>
+    <div class="faq">
+        <h2 class="question">Can I apply for multiple scholarships at the same time?</h2>
+        <p class="answer">Yes, you can apply for multiple scholarships at the same time. In fact, it's a good idea to apply for as many scholarships as you are eligible for to increase your chances of receiving funding.</p>
+    </div>
+    <div class="faq">
+        <h2 class="question" style="font-size: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 4px solid blue;
+      border-radius: 5px;
+      background-color: white;">When is the best time to apply for a scholarship?</h2>
+        <p class="answer1">  The best time to apply for a scholarship is within the application period set by the scholarship provider/University. Usually, scholarship applications (as well as admissions) should be done 6 months to one year before the academic year you plan to study.</p>
+    </div>
+    <div class="faq">
+        <h2 class="question" style="    font-size: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 4px solid green;
+      border-radius: 5px;
+      background-color: white;">Are scholarships offered every year? If I missed the application deadline this year, can I apply for it the next year?</h2>
+        <p class="answer2">Most major scholarships are offered annually but this will always depend if the University or the scholarship provider has enough funds for their scholarship program.</p>
+    </div>
+    <div class="faq">
+        <h2 class="question" style="    font-size: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 4px solid pink;
+      border-radius: 5px;
+      background-color: white;">Are scholarships taxable?</h2>
+        <p class="answer3">Scholarships may be taxable, depending on how they are used and the specific terms of the scholarship program. Scholarships used to pay for qualified education expenses are generally not taxable, while scholarships used for non-qualified expenses may be subject to taxes.</p>
+    </div>
+    <div class="faq">
+        <h2 class="question" style="    font-size: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 4px solid orangered;
+      border-radius: 5px;
+      background-color: white;">What happens if I receive a scholarship and then drop out of school?</h2>
+        <p class="answer4"> If you drop out of school after receiving a scholarship, the terms and conditions of the scholarship program will dictate what happens to the scholarship funds. Some scholarship programs may require you to repay the scholarship if you do not complete the educational program or meet certain academic requirements. It is important to carefully review the terms and conditions of the scholarship program before accepting the award.</p>
+    </div>
+    
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
